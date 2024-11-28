@@ -1,35 +1,44 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Outlet, useLocation } from "react-router-dom";
+import Home from "./components/home/Home";
+import Navbar from "./components/navbar/Navbar";
+
+
+import "react-toastify/dist/ReactToastify.css";
+import { HelmetProvider } from "react-helmet-async";
+import ContextProvider from "./context/Context";
+import Footer from "./components/footer/Footer";
+
+
 
 function App() {
-  const [count, setCount] = useState(0)
+  const location = useLocation();
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <ContextProvider>
+      <HelmetProvider>
+        <div className="bg-gray-100 pt-6">
+          <div
+            className={`${
+              location.pathname == "/" ||
+              location.pathname == "/Laptops" ||
+              location.pathname == "/SmartPhone" ||
+              location.pathname == "/SmartWatch" ||
+              location.pathname == "/Accessories" ||
+              location.pathname == "/MacBook"
+                ? "w-full md:max-w-[90vw] mx-auto"
+                : "w-[100vw]"
+            } px-2 md:px-5`}
+          >
+            <Navbar />
+           
+            <Outlet />
+            
+          </div>
+          <Footer />
+        </div>
+      </HelmetProvider>
+    </ContextProvider>
+  );
 }
 
-export default App
+export default App;
