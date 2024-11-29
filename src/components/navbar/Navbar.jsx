@@ -50,7 +50,7 @@ import {
           location.pathname == "/SmartWatch" ||
           location.pathname == "/Accessories" ||
           location.pathname == "/MacBook"
-            ? "bg-primary  text-white/80"
+            ? "bg-[#9538E2]  text-white/80"
             : "w-full md:w-[90vw] mx-auto lg:px-20"
         }  rounded-lg rounded-bl-none rounded-br-none md:px-10`}
       >

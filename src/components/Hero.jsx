@@ -8,7 +8,7 @@ const Hero = ({ children, title, description }) => {
 
   return (
     <div
-      className={`"hero bg-primary flex items-center justify-center ${
+      className={`"hero bg-[#9538E2] flex items-center justify-center ${
         location.pathname == "/" ||
         location.pathname == "/Laptops" ||
         location.pathname == "/SmartPhone" ||

@@ -116,6 +116,62 @@
       "rating": 4.7
     },
     {
+      "product_id": "SP203",
+      "product_title": "iPhone 14 Pro",
+      "product_image": "https://i.ibb.co/kqZ5hD9/14-pro.jpg",
+      "category": {
+        "name": "SmartPhone",
+        "id": "CAT002"
+      },
+      "price": 699.99,
+      "description": "Flagship iPhone with ProMotion display and advanced camera.",
+      "Specification": ["6.1-inch Display", "128GB Storage", "A16 Bionic Chip"],
+      "availability": true,
+      "rating": 4.5
+    },
+    {
+      "product_id": "SP204",
+      "product_title": "iPhone 13 Pro",
+      "product_image": "https://i.ibb.co/hC2YGY0/13-pro.jpg",
+      "category": {
+        "name": "SmartPhone",
+        "id": "CAT002"
+      },
+      "price": 499.99,
+      "description":  "High-performance iPhone with ProMotion and triple-camera setup.",
+      "Specification": ["6.1-inch Display", "128GB Storage", "A15 Bionic Chip"],
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": "SP205",
+      "product_title": "iPhone 12 Pro",
+      "product_image": "https://i.ibb.co/Pm6SMPg/12-pro.jpg",
+      "category": {
+        "name": "SmartPhone",
+        "id": "CAT002"
+      },
+      "price": 600.99,
+      "description": "Powerful iPhone with LiDAR scanner and triple-camera system.",
+      "Specification":["6.1-inch Display", "128GB Storage", "A14 Bionic Chip"],
+      "availability": true,
+      "rating": 4.9
+    },
+    {
+      "product_id": "SP206",
+      "product_title": "iPhone 11",
+      "product_image": "https://i.ibb.co/5vqjBbr/11.jpg",
+      "category": {
+        "name": "SmartPhone",
+        "id": "CAT002"
+      },
+      "price": 659.90,
+      "description": "Affordable iPhone with dual-camera system and long battery life.",
+      "Specification":  ["6.1-inch Display", "64GB Storage", "A13 Bionic Chip"],
+      "availability": true,
+      "rating": 4.9
+    },
+    {
       "product_id": "SW301",
       "product_title": "Apple Watch Series 5",
       "product_image": "https://i5.walmartimages.com/seo/Pre-Owned-Apple-Watch-Series-5-GPS-Only-44mm-Smartwatch_1a5f0fb9-c759-4f34-93b7-3cf2b9447c96.f07cc76f54ed2821db37d12344a7b810.jpeg",
