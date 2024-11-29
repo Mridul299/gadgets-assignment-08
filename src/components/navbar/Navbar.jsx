@@ -88,9 +88,12 @@ import {
               <li>
                 <NavLink to="/feedback">Contact Us</NavLink>
               </li>
+              <li>
+                <NavLink to="/faq">FAQ</NavLink>
+              </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl md:text-2xl font-bold ">
+          <a className="btn btn-ghost text-xl md:text-3xl  font-bold ">
             Gadget Heaven
           </a>
         </div>
@@ -142,6 +145,18 @@ import {
                 }
               >
                 Contact Us
+              </NavLink>
+            </li>
+            <li className=" hover:text-black rounded-lg">
+              <NavLink
+                to="/faq"
+                className={({ isActive }) =>
+                  isActive
+                    ? "bg-gray-300 text-primary p-2 rounded-lg"
+                    : "hover:bg-gray-400 hover:text-black p-1.5 rounded-lg"
+                }
+              >
+                FAQ
               </NavLink>
             </li>
           </ul>

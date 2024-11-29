@@ -16,6 +16,7 @@ import Statistics from './components/statistics/Statistics';
 import Contact from './components/contact/Contact';
 import Dashboard from './components/dashboard/Dashboard';
 import ProductDetails from './components/productDetails/ProductDetails';
+import FAQ from './components/faq/FAQ';
 
 const router = createBrowserRouter([
   {
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
       {
         path:"feedback",
         element:<Contact></Contact>
+      },
+      {
+        path:"/faq",
+        element:<FAQ></FAQ>
       },
       {
         path: "product-details/:id",
